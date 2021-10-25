@@ -34,3 +34,20 @@ monitorAvgFlowrate(filename, target)
 
 - `filename` is a string of the flowrate file (without .txt extention).
 - `target` is the value of the desired flowrate. If target is provided the desired value will be drawn on the graph (optional parameter).
+
+
+## `cossolvent.m` (command line function)
+Calculates the cossolvent flowrate in ml/min for a given cossolvent mass fraction
+  
+Run from the command window as: 
+```matlab
+cossolvent(Q_CO2, x_cossolvent)
+```
+or 
+```matlab
+cossolvent(Q_CO2, x_cossolvent, cossolvent)
+```
+
+- `Q_CO2` is the CO2 flowrate in g/min
+- `x_cossolvent` is the cossolvent mass fraction
+- `cossolvent` is a string representing the cossolvent. Default is `ethanol`.
