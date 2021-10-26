@@ -1,9 +1,6 @@
 # sfe-flow-rate
 Matlab functions to read and analyse flow-rate data from a Coriolis flow-meter.
 
-## `flowratesAnalysis.m` (script)
-Script to run run through all flow-rate files in the specified folders and report time and average flow-rates.
-
 
 ## `getAvgFlowrate.m` (command line function)
 Calculates the average flowrate from the SFE equipment flowrate file.
@@ -50,4 +47,8 @@ cossolvent(Q_CO2, x_cossolvent, cossolvent)
 
 - `Q_CO2` is the CO2 flowrate in g/min
 - `x_cossolvent` is the cossolvent mass fraction
-- `cossolvent` is a string representing the cossolvent. Default is `ethanol`.
+- `cossolvent` is a string representing the cossolvent. Currently, only `ethanol` is supported. Default is `ethanol`. 
+
+
+## `flowratesAnalysis.m` (script)
+Script to run through all flow-rate files in the specified folders and report time and average flow-rates.
